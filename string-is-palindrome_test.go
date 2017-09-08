@@ -6,7 +6,7 @@ func TestStringIsPalindrome(t *testing.T) {
 	palindromes := []string{
 		"mom",
 		"dad",
-		"\u0939\u093f\u0939",
+		"\u0939\u093f",
 		"हिह",
 		"t",
 		"😲😿🙀😿😲",
@@ -18,7 +18,7 @@ func TestStringIsPalindrome(t *testing.T) {
 		"A man, a plan, a canal: Panama",
 		"Alpaca in the cold moonlight",
 		"請問你哪位？",
-		"\u0939\u093f",
+		"\u0939\u093f\u0939",
 		"हि",
 	}
 
@@ -38,7 +38,7 @@ func TestStringIsPalindrome(t *testing.T) {
 func TestReverseString(t *testing.T) {
 	reversed := map[string]string{
 		"Test":         "tseT",
-		"\u0939\u093f": "\u093f\u0939",
+		"\u0939\u093f": "\u0939\u093f",
 		"請問你哪位？":       "？位哪你問請",
 	}
 
